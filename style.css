@@ -7,14 +7,29 @@ h1{
     text-align: center;
     font-family: 'Balsamiq Sans', cursive;
     font-weight: bold;
-    padding: 3%;
+    padding:3%;
+    color: #1E3163;
+}
+h3{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bold;
     color: #E05D5D;
 }
+
+.mission p{
+    text-align: center;
+    font-weight: bold;
+}
 img{
-    width: 30%;
+    width: 50%;
     border-radius: 50%;
 }
+.row{
+    justify-content: space-between;
+}
 .container .card{
+    height: 100%;
     border: none;
     box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
                 inset -5px -5px 5px rgba(255,255,255,0.5),
@@ -44,4 +59,53 @@ img{
     color: #E05D5D;
     font-weight: bold;
     font-family: 'Balsamiq Sans', cursive;
+}
+.smedia{
+    margin: 5%;
+    text-align: center;
+}
+.smedia i{
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding:3%;
+}
+.fa-facebook:hover{
+    border-radius: 40%;
+    background:#3b5998;
+    color: white;
+}
+.fa-github:hover{
+    border-radius: 40%;
+    background:#171515;
+    color: white;
+}
+.fa-instagram:hover{
+    border-radius: 40%;
+    background:#b62a8d;
+    color: white;
+}
+.fa-linkedin:hover{
+    border-radius: 40%;
+    background:#0E76A8;
+    color: white;
+}
+
+@media(max-width: 425px){
+    .row{
+        display: inline;
+        text-align: center;  
+    }
+    .card{
+        width: 100%;
+        padding: 2% 0;
+        margin: 5% 0;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px){
+    .row{
+        justify-content: space-between;
+    }
+    .card{
+        width: 30%;
+    }
 }
